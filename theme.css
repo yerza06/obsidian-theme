@@ -1,0 +1,75 @@
+@font-face {
+	font-family: "iAWriterDuoS";
+	src: url(/src/fonts/iAWriterQuattroS-Regular.ttf);
+}
+
+@font-face {
+	font-family: "JetBrainsMonoNerdFontMono";
+	src: url(/src/fonts/JetBrainsMonoNerdFontMono-Regular.ttf);
+}
+
+:root {
+	--font-interface-theme: iAWriterDuoS;
+	--font-text-theme: iAWriterDuoS;
+	--font-monospace-theme: JetBrainsMonoNerdFontMono;
+}
+
+body {
+	--radius-s: 0px;
+	--radius-m: 0px;
+	--radius-l: 0px;
+	--input-radius: 5px;
+	--tab-radius-active: 8px 8px 0 0;
+	--checkbox-radius: 3px;
+	--toggle-radius: 10px;
+	--toggle-thumb-radius: 10px;
+	--slider-thumb-radius: 10px;
+	--border-width: 2px;
+	--color-base: #d4d4d4;
+
+
+	--color-red: #ef6484;
+	--dark-background: #131313;
+	--light-backgrund: #ededed;
+	--color-white: rgb(255, 255, 255);
+	--color-cyan: #46e3f6;
+	--color-purple: #998ef0;
+	--color-red: #ef6484;
+	--color-yellow: #fff635;
+	--color-orange: #ff9b2f;
+	--color-green: #7bf988;
+	--color-gray: #9d989c;
+}
+
+.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+	display: none;
+}
+
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+	rx: 0;
+	ry: 0;
+}
+
+.menu {
+	padding: var(--size-2-1);
+}
+
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+.theme-dark {
+  --background-primary: #131313;
+  --background-secondary: #131313;
+}
+
+.theme-light {
+  --background-primary: #ededed;
+  --background-secondary: hsl(0, 0%, 93%);
+}
