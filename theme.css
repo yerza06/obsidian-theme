@@ -12,6 +12,18 @@
 	--font-interface-theme: iAWriterDuoS;
 	--font-text-theme: iAWriterDuoS;
 	--font-monospace-theme: JetBrainsMonoNerdFontMono;
+
+	--color-red: #ef6484;
+	--dark-background: #131313;
+	--light-backgrund: #ededed;
+	--color-white: rgb(255, 255, 255);
+	--color-cyan: #46e3f6;
+	--color-purple: #998ef0;
+	--color-red: #ef6484;
+	--color-yellow: #fff635;
+	--color-orange: #ff9b2f;
+	--color-green: #7bf988;
+	--color-gray: #9d989c;
 }
 
 body {
@@ -25,20 +37,6 @@ body {
 	--toggle-thumb-radius: 10px;
 	--slider-thumb-radius: 10px;
 	--border-width: 2px;
-	--color-base: #d4d4d4;
-
-
-	--color-red: #ef6484;
-	--dark-background: #131313;
-	--light-backgrund: #ededed;
-	--color-white: rgb(255, 255, 255);
-	--color-cyan: #46e3f6;
-	--color-purple: #998ef0;
-	--color-red: #ef6484;
-	--color-yellow: #fff635;
-	--color-orange: #ff9b2f;
-	--color-green: #7bf988;
-	--color-gray: #9d989c;
 }
 
 .workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
@@ -67,9 +65,39 @@ svg * {
 .theme-dark {
   --background-primary: #131313;
   --background-secondary: #131313;
+
+  --color-red: #ef6484;
+  --dark-background: #131313;
+  --light-backgrund: #ededed;
+  --color-white: rgb(255, 255, 255);
+  --color-cyan: #46e3f6;
+  --color-purple: #998ef0;
+  --color-red: #ef6484;
+  --color-yellow: #fff635;
+  --color-orange: #ff9b2f;
+  --color-green: #7bf988;
+  --color-gray: #9d989c;
+
+  --code-normal: #fff;
+  --code-comment: var(--color-gray);
+  --code-function: var(--color-green);
+  --code-important: var(--color-yellow);
+  --code-keyword: var(--color-cyan);
 }
 
 .theme-light {
   --background-primary: #ededed;
-  --background-secondary: hsl(0, 0%, 93%);
+  --background-secondary: #ededed;
+
+  --color-red: #ef6484;
+  --dark-background: #131313;
+  --light-backgrund: #ededed;
+  --color-white: rgb(255, 255, 255);
+  --color-cyan: #46e3f6;
+  --color-purple: #998ef0;
+  --color-red: #ef6484;
+  --color-yellow: #fff635;
+  --color-orange: #ff9b2f;
+  --color-green: #7bf988;
+  --color-gray: #9d989c;
 }
