@@ -1,3 +1,5 @@
+@import url(callout.css);
+
 @font-face {
 	font-family: "iAWriterDuoS";
 	src: url(/src/fonts/iAWriterQuattroS-Regular.ttf);
@@ -13,7 +15,6 @@
 	--font-text-theme: iAWriterDuoS;
 	--font-monospace-theme: JetBrainsMonoNerdFontMono;
 
-	--color-red: #ef6484;
 	--dark-background: #131313;
 	--light-backgrund: #ededed;
 	--color-white: rgb(255, 255, 255);
@@ -50,6 +51,14 @@ svg * {
 	ry: 0;
 }
 
+/* .modal-content.vertical-tabs-container {
+	border-radius: 30px;
+} */
+
+.modal .mod-settings mod-sidebar-layout {
+	border-radius: 30px;
+}
+
 .menu {
 	padding: var(--size-2-1);
 }
@@ -66,7 +75,6 @@ svg * {
   --background-primary: #131313;
   --background-secondary: #131313;
 
-  --color-red: #ef6484;
   --dark-background: #131313;
   --light-backgrund: #ededed;
   --color-white: rgb(255, 255, 255);
@@ -89,7 +97,6 @@ svg * {
   --background-primary: #ededed;
   --background-secondary: #ededed;
 
-  --color-red: #ef6484;
   --dark-background: #131313;
   --light-backgrund: #ededed;
   --color-white: rgb(255, 255, 255);
@@ -100,4 +107,74 @@ svg * {
   --color-orange: #ff9b2f;
   --color-green: #7bf988;
   --color-gray: #9d989c;
+}
+
+
+/* ====== Callout ==================================== */
+
+/* Customize callouts
+
+CSS snippets and Community plugins can define custom callouts, or even overwrite the default configuration.
+
+To define a custom callout, create the following CSS block:
+
+.callout[data-callout="custom-question-type"] {
+    --callout-color: 0, 0, 0;
+    --callout-icon: lucide-alert-circle;
+}
+
+The value of the data-callout attribute is the type identifier you want to use, for example [!custom-question-type].
+
+    --callout-color defines the background color using numbers (0–255) for red, green, and blue.
+    --callout-icon can be an icon ID from [lucide.dev](https://lucide.dev/), or an SVG element. */
+
+
+.callout {
+	border-radius: 5px;
+}
+
+.callout[data-callout="book-marked"] {
+    --callout-color: 232, 232, 232;
+    --callout-icon: book-marked;
+}
+
+.callout[data-callout="image"] {
+    --callout-color: 232, 232, 232;
+    --callout-icon: image;
+}
+
+.callout[data-callout="note"] {
+    --callout-color: 232, 232, 232;
+    --callout-icon: sticky-note;
+}
+
+/* =====/ Callout ==================================== */
+
+
+
+/* .multi-select-pill {
+	background: rgba(155, 155, 155, 0.547);
+	border-radius: 5px;
+	padding: 0 10px;
+} */
+
+.multi-select-pill-remove-button {
+	color: var(--font-text-theme);
+}
+
+.canvas-control-group{
+	border: 0px solid;
+}
+
+.canvas-control-item {
+	border: 0px solid;
+	border-radius: 5px;
+}
+
+.canvas-node-content-blocker {
+	border-radius: 10px;
+}
+
+.canvas-node.is-themed.is-focused.mod-canvas-color-1 {
+	border-radius: 20px;
 }
